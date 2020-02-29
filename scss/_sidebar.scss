@@ -1,0 +1,91 @@
+@import "colors&font";
+
+@mixin transition {
+  transition: all 0.7s;
+}
+
+$sidebar-font-size: $font-size-base * 0.8;
+$sidebar-width: 300px;
+
+.sidebar {
+  height: 100vh;
+  width: 0px;
+  position: fixed;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  &-content {
+    display: block;
+    padding: 70px 50px;
+
+    select {
+      font-size: $sidebar-font-size;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .list-group {
+      &-item {
+        font-size: $sidebar-font-size;
+        border: none;
+        padding: 5px 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        a {
+          text-decoration: none;
+          color: $secondary;
+          span {
+            margin-left: 10px;
+          }
+          .text-premium {
+            color: $primary;
+          }
+        }
+      }
+      .social-network {
+        display: flex;
+        justify-content: start;
+        .icon {
+          color: $gray-100;
+          background-color: $primary;
+          border-radius: 50%;
+          margin-left: 5px;
+          margin-right: 5px;
+
+          .facebook,
+          .instagram {
+            padding: 18px;
+          }
+        }
+      }
+      .line-bottom {
+        border-bottom: 2px solid $secondary;
+        margin-right: 90px;
+      }
+      .line-top {
+        border-top: 2px solid $secondary;
+        margin-right: 90px;
+      }
+    }
+    .login {
+      margin-top: 100px;
+    }
+  }
+}
+
+.show {
+  width: $sidebar-width;
+  @include transition;
+}
+
+.show-sidebar {
+  margin-left: $sidebar-width;
+  @include transition;
+}
+
+main {
+  z-index: 2;
+  width: 100%;
+  @include transition;
+}
