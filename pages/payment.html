@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+    <div id="sidebar-component">
+        <sidebar></sidebar>
+    </div>
+    <main>
+        <button class="btn btn-primary btn-sm" id="side-bar-button">
+            <img alt="list-icon" src="/assets/list.svg">
+        </button>
+        <section id="payment">
+            <h3>Thanh toán</h3>
+            <h5>Chọn các hình thức thanh toán</h5>
+            <form>
+                <div class="billing-info">
+                    <h4>Billing Info</h4>
+                    <div class="form-group">
+                        <label for="fullname">FULLNAME</label>
+                        <input type="text" class="form-control" name="fullname" id="fullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">ADDRESS</label>
+                        <input type="text" class="form-control" name="address" id="address">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="city">CITY</label>
+                            <input type="text" class="form-control" name="city" id="city">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="zipcode">ZIP CODE</label>
+                            <input type="text" class="form-control" name="zipcode" id="zipcode">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">COUNTRY</label>
+                        <div class="country-select">
+                            <select class="form-control" id="country">
+                                <option selected>Choose...</option>
+                                <option value="japan">Japan</option>
+                                <option value="korea">Korean</option>
+                                <option value="vietnam">Vietnam</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="credit-card">
+                    <h4>Credit Card Info</h4>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="cardnumber">CARDNUMBER</label>
+                            <input type="text" class="form-control" name="cardnumber" id="cardnumber">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="typecard">TYPE</label>
+                            <input type="text" class="form-control" name="typecard" id="typecard">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardholdername">CARDHOLDER NAME</label>
+                        <input type="text" class="form-control" name="cardholdername" id="cardholdername">
+                    </div>
+                    <div class="form-group">
+                        <label for="expiredate">EXPIRE DATE</label>
+                        <input type="date" class="form-control" name="expiredate" id="expiredate">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="number" class="form-control" name="cvv" id="cvv">
+                    </div>
+                </div>
+            </form>
+            <div class="showmore-section">
+                <button type="button" class="btn btn-primary btn-lg">Confirm</button>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

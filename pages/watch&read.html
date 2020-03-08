@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch&Read</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+    <div id="sidebar-component">
+        <sidebar></sidebar>
+    </div>
+    <main>
+        <button class="btn btn-primary btn-sm" id="side-bar-button">
+            <img alt="list-icon" src="/assets/list.svg">
+        </button>
+        <section class="container-fluid row" id="watch-read-1-section">
+            <div class="col-md-6 offset-md-3">
+                <h3>DR. STONE</h3>
+                <p>Dr. Stone là một loạt manga Nhật Bản được viết bởi Riichiro Inagaki và minh họa bởi Boichi, đăng trên
+                    Weekly Shonen Jump từ ngày 06 tháng 3 năm 2017 với các chương đơn lẻ được thu thập và xuất bản bởi
+                    Shueisha thành mười tập... <span style="display:none">tankōbon Tính đến tháng 4 năm 2019. Viz Media
+                        đã cấp phép cho manga
+                        ở Bắc Mỹ</span>
+                </p>
+                <a href="#">Read More...</a>
+                <div class="author">
+                    <img src="/assets/Avatar.svg" alt="avatar">
+                    <div class="author-info">
+                        <p class="author-name">Creator Name</p>
+                        <p class="author-follower">2,024 Following</p>
+                    </div>
+                    <button class="btn btn-primary">Follow</button>
+                </div>
+                <div class="chapter-control">
+                    <a href="#">
+                        <img src="/assets/chevrons-left.svg" alt="backward">
+                    </a>
+                    <select class="form-control">
+                        <option disabled>Chương</option>
+                        <option value="chap1">Chương 1</option>
+                        <option value="chap2">Chương 2</option>
+                    </select>
+                    <a href="#">
+                        <img src="/assets/chevrons-right.svg" alt="forward">
+                    </a>
+                </div>
+                <div class="showmore-section">
+                    <div class="btn btn-dark">Watch Now</div>
+                </div>
+                <section class="read-section">
+                    <img src="/assets/images/Image 17.png" alt="manga">
+                    <img src="/assets/images/Image 18.png" alt="manga">
+                </section>
+            </div>
+        </section>
+        <section class="container-fluid" id="watch-read-2-section">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="tag">
+                        <span class="badge badge-pill badge-primary"> English</span>
+                        <span class="badge badge-pill badge-warning text-white"> Korean</span>
+                        <span class="badge badge-pill badge-success"> Vietnamese</span>
+                        <span class="badge badge-pill badge-secondary"> Japanese</span>
+                    </div>
+                    <div class="title">
+                        <h3>DR. STONE</h3>
+                        <div class="badge badge-secondary">Read Avaliable</div>
+                    </div>
+                    <p>Dr. Stone là một loạt manga Nhật Bản được viết bởi Riichiro Inagaki và minh họa bởi Boichi, đăng
+                        trên
+                        Weekly Shonen Jump từ ngày 06 tháng 3 năm 2017 với các chương đơn lẻ được thu thập và xuất bản
+                        bởi
+                        Shueisha thành mười tập... <span style="display:none">tankōbon Tính đến tháng 4 năm 2019. Viz
+                            Media
+                            đã cấp phép cho manga
+                            ở Bắc Mỹ</span>
+                    </p>
+                    <a href="#">Read More...</a>
+                    <div class="author">
+                        <img src="/assets/Avatar.svg" alt="avatar">
+                        <div class="author-info">
+                            <p class="author-name">Creator Name</p>
+                            <p class="author-follower">2,024 Following</p>
+                        </div>
+                        <button class="btn btn-primary">Follow</button>
+                    </div>
+                    <textarea placeholder="Type somethimg" name="comment-input" id="comment-input" cols="30" rows="10"
+                        class="form-control"></textarea>
+                    <button class="btn btn-primary">Comment</button>
+                    <section id="comments">
+                        <div v-for="n in 3">
+                            <div class="comment-info">
+                                <img src="/assets/Avatar(red).svg" alt="avatar(red)">
+                                <p class="comment-name">Name Surname</p>
+                                <p class="comment-time">1h ago</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                ero labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </section>
+                </div>
+                <div id="sideList" class="col-md-5 card-list">
+                    <div v-for="item in list" class="card card-small">
+                        <img class="card-img" v-bind:src="'/assets/images/' + item.imgSrc" alt="Card image cap">
+                        <div class="card-body">
+                            <div>
+                                <h5 class="card-title text-primary">Thánh Võ Tinh Thần | Chap 35</h5>
+                                <p>12.374 views | 2 tháng trước</p>
+                            </div>
+                            <div>
+                                <div class="badge badge-secondary">Read Avaliable</div>
+                                <div class="dotted-group">
+                                    <span class="dotted dot-primary"></span>
+                                    <span class="dotted dot-secondary"></span>
+                                    <span class="dotted dot-success"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

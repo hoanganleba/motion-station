@@ -1,10 +1,8 @@
-@import "colors&font";
-
 @mixin transition {
   transition: all 0.7s;
 }
 
-$sidebar-font-size: $font-size-base * 0.8;
+$sidebar-font-size: $font-size-base;
 $sidebar-width: 300px;
 
 .sidebar {
@@ -15,6 +13,7 @@ $sidebar-width: 300px;
   top: 0;
   left: 0;
   z-index: 1;
+  box-shadow: 0 15px 25px 0 rgba($gray-900, 0.55);
 
   &-content {
     display: block;
@@ -22,14 +21,15 @@ $sidebar-width: 300px;
 
     select {
       font-size: $sidebar-font-size;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: $h4-font-size;
+      margin-bottom: $h6-font-size;
     }
     .list-group {
       &-item {
         font-size: $sidebar-font-size;
+        text-transform: uppercase;
         border: none;
-        padding: 5px 0px;
+        padding: 10px 0px;
         margin-top: 10px;
         margin-bottom: 10px;
         a {
@@ -40,6 +40,7 @@ $sidebar-width: 300px;
           }
           .text-premium {
             color: $primary;
+            font-weight: border;
           }
         }
       }
@@ -55,7 +56,7 @@ $sidebar-width: 300px;
 
           .facebook,
           .instagram {
-            padding: 18px;
+            padding: 10px;
           }
         }
       }

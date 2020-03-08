@@ -1,0 +1,19 @@
+#subscriptions {
+  .nav {
+    margin-top: 5vh;
+    .active {
+      padding-bottom: 10px;
+      border-bottom: 1px solid $primary;
+    }
+    .nav-item {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .line-right {
+      border-right: 2px solid $secondary;
+    }
+    .following {
+      color: $secondary;
+    }
+  }
+}

@@ -4,39 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supscriptions</title>
+    <title>Page Management</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
-
     <div id="sidebar-component">
         <sidebar></sidebar>
     </div>
     <main>
-        <section class="main-img-section">
-            <button class="btn btn-primary btn-sm" id="side-bar-button">
-                <img alt="list-icon" src="/assets/list.svg">
-            </button>
-            <div class="main-img-content small">
-                <div class="content">
-                    <h1 class="text-primary font-weight-bold">Dr. Stone</h1>
-                    <div class="tag">
-                        <span class="badge badge-pill badge-primary"> English</span>
-                        <span class="badge badge-pill badge-warning text-white"> Korean</span>
-                        <span class="badge badge-pill badge-success"> Vietnamese</span>
-                        <span class="badge badge-pill badge-secondary"> Japanese</span>
-                    </div>
-                </div>
-                <div class="btn-play">
-                    <a href="#" alt="play-button">
-                        <img height="60px" src="/assets/Buttons-Play.svg" alt="playbuttonicon" />
-                    </a>
-                </div>
+        <button class="btn btn-primary btn-sm" id="side-bar-button">
+            <img alt="list-icon" src="/assets/list.svg">
+        </button>
+        <section id="header-img">
+            <div class="header-avatar">
+                <img src="/assets/images/avatar.png" alt="avatar">
             </div>
         </section>
-        <section class="container-fluid" id="subscriptions">
+        <section class="container-fluid" id="page-management">
+            <h4>Creator Name</h4>
+            <p>2,024 Following</p>
+            <div class="social-group">
+                <a href="#" class="icon">
+                    <img class="facebook" src="/assets/facebook.svg" alt="Facebook">
+                </a>
+                <a href="#" class="icon">
+                    <img class="instagram" src="/assets/instagram.svg" alt="Instagram">
+                </a>
+            </div>
             <ul class="nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">All shows</a>
@@ -50,19 +46,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Manhwa</a>
                 </li>
-                <li class="nav-item line-right"></li>
-                <li class="nav-item">
-                    <a class="nav-link following" href="#">Following</a>
-                </li>
             </ul>
             <div id="app" class="row card-list">
                 <div v-for="item in list" class="col-lg-4 col-md-6">
                     <div class="card card-small">
                         <img class="card-img" v-bind:src="'/assets/images/' + item.imgSrc" alt="Card image cap">
+                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
                         <div class="card-body">
                             <div>
                                 <h5 class="card-title text-primary">Thánh Võ Tinh Thần | Chap 35</h5>
-                                <p>12.374 views | 2 tháng trước</p>
+                                <p style="text-align: left;">12.374 views | 2 tháng trước</p>
                             </div>
                             <div>
                                 <div v-if="item.readAvailable === true" class="badge badge-secondary">Read Avaliable

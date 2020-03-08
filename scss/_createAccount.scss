@@ -1,0 +1,46 @@
+#create-account {
+  margin-top: $h2-font-size * 2;
+  .button-group {
+    text-align: center;
+    .btn {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  h3 {
+    color: $secondary;
+    text-align: center;
+    margin-top: $h2-font-size;
+    margin-bottom: $h4-font-size;
+  }
+  p {
+    text-align: center;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    label {
+      font-weight: bolder;
+    }
+    #choose-language {
+      label {
+        display: block;
+      }
+      select {
+        background-color: white;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        border: 1px solid $gray-800;
+        color: $gray-600;
+      }
+    }
+    .form-center {
+      margin-left: $h4-font-size;
+      margin-right: $h4-font-size;
+      width: 40%;
+      @media screen and (max-width: 720px) {
+        width: 100%;
+      }
+    }
+  }
+}

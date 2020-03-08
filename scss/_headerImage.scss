@@ -1,0 +1,50 @@
+$bg-dark-gradient: linear-gradient(
+  to bottom,
+  rgba($dark, 0.5),
+  rgba($dark, 0.9)
+);
+
+.main-img-section {
+  margin: $h6-font-size;
+  position: relative;
+  border-radius: 5px;
+  background: $bg-dark-gradient, url("/assets/images/video.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .main-img-content {
+    display: flex;
+    padding: 30vw 3rem 4rem 4rem;
+    justify-content: space-between;
+    h1 {
+      margin-bottom: $h5-font-size;
+    }
+    p {
+      color: $gray-100;
+      margin-bottom: $h5-font-size;
+      font-size: $font-size-base * 1.42857143;
+    }
+
+    .btn-play {
+      padding-left: 10px;
+      align-self: center;
+    }
+  }
+  .small {
+    padding: 13rem 3rem 3rem 3rem;
+  }
+}
+.tag {
+  .badge {
+    margin: 2px;
+    font-style: oblique;
+  }
+  .badge-warning {
+    color: $white;
+  }
+
+  @media screen and (max-width: 540px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

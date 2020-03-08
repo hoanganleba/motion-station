@@ -1,0 +1,69 @@
+@mixin margin-top($font-size) {
+  margin-top: $font-size;
+}
+@mixin margin-bottom($font-size) {
+  margin-bottom: $font-size;
+}
+#premium {
+  @include margin-top($h1-font-size * 2);
+  h3 {
+    text-align: center;
+    @include margin-bottom($h6-font-size);
+  }
+  h5 {
+    text-align: center;
+    font-family: $font-family-base;
+    color: $gray-600;
+  }
+  .options {
+    @include margin-top($h1-font-size);
+    justify-content: center;
+    display: flex;
+    @media screen and (max-width: 720px) {
+      flex-direction: column;
+    }
+    .card {
+      min-width: $h4-font-size * 10;
+      margin: 10px 15px;
+      border: none;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+      .card-body {
+        h6 {
+          font-family: $font-family-base;
+          font-weight: bolder;
+          font-size: $font-size-base * 0.8;
+          color: $white;
+        }
+        h2 {
+          padding-top: $h2-font-size;
+          padding-bottom: $h2-font-size;
+          font-family: $font-family-base;
+          text-align: center;
+          sub {
+            font-size: $h5-font-size;
+          }
+        }
+        .list-group {
+          .list-group-item {
+            border: none;
+            border-bottom: 1px solid $gray-200;
+            padding: 20px 5px;
+            display: flex;
+            justify-content: space-between;
+            color: $gray-600;
+            b {
+              font-weight: bolder;
+              color: $gray-900;
+            }
+          }
+          .border-none {
+            border: none;
+          }
+        }
+      }
+      a {
+        border-radius: 0 0 5px 5px;
+      }
+    }
+  }
+}

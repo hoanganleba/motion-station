@@ -1,12 +1,22 @@
 // My variable overrides
-@import 'colors&font';
-@import 'customizeBadge';
-$card-border-color: white;
+@import "colors&font";
+$badge-padding-y: 10px;
+$badge-padding-x: 40px;
+$badge-pill-padding-x: 40px;
+$input-btn-padding-x: 1.5rem;
+$input-btn-padding-y: 0.6rem;
+$input-btn-padding-y-lg: 0.8rem;
+$input-btn-padding-x-lg: 3.5rem;
 
 // Bootstrap and its required default variables
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
+$input-border-color: $gray-800;
+$card-border-color: $white;
+$input-group-addon-bg: $gray-800;
+$input-group-addon-color: $gray-100;
+$input-group-addon-border-color: $gray-800;
 
 // Optional import
 @import "node_modules/bootstrap/scss/buttons";
@@ -18,6 +28,8 @@ $card-border-color: white;
 @import "node_modules/bootstrap/scss/root";
 @import "node_modules/bootstrap/scss/type";
 @import "node_modules/bootstrap/scss/nav";
-@import 'customize';
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/input-group";
+@import "customize";
 
 $theme-colors: map-remove($theme-colors, "info");
