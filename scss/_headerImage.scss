@@ -1,32 +1,33 @@
+@use 'globalStyles' as *;
 $bg-dark-gradient: linear-gradient(
   to bottom,
   rgba($dark, 0.5),
   rgba($dark, 0.9)
 );
 
-.main-img-section {
-  margin: $h6-font-size;
+.header-img {
+  @include margin($h6-font-size);
   position: relative;
-  border-radius: 5px;
+  border-radius: $border-radius;
   background: $bg-dark-gradient, url("/assets/images/video.png");
   background-repeat: no-repeat;
   background-size: cover;
 
-  .main-img-content {
+  &__container {
     display: flex;
-    padding: 30vw 3rem 4rem 4rem;
     justify-content: space-between;
+    padding: 30vw 3rem 4rem 4rem;
     h1 {
-      margin-bottom: $h5-font-size;
+      @include margin-bottom($h5-font-size);
     }
     p {
-      color: $gray-100;
-      margin-bottom: $h5-font-size;
-      font-size: $font-size-base * 1.42857143;
+      @include margin-bottom($h5-font-size);
+      @include text-white;
+      font-size: $h5-font-size;
     }
 
     .btn-play {
-      padding-left: 10px;
+      padding-left: $h6-font-size;
       align-self: center;
     }
   }

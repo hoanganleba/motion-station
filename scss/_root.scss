@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import "colors&font";
+@import "globalStyles";
+@import "sidebar";
+@import "premium";
+@import "subscriptions";
+@import "headerImage";
+@import "payment";
+@import "uploadVideo";
+@import "createAccount";
+@import "pageManagement";
+@import "watch_read";
+
+$bg-primary-gradient: linear-gradient(
+  to bottom,
+  rgba($primary, 0.9),
+  rgba($primary, 0.9)
+);
+
+@mixin heading-font($color) {
+  font-family: $font-family-secondary;
+  color: $color;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include heading-font($primary);
+  letter-spacing: -0.5px;
+}
+h6 {
+  @include heading-font($secondary);
+}
+
+main {
+  z-index: 2;
+  width: 100%;
+  @include transition;
+}
+
+.information {
+  @include margin-top(12vh);
+  background: $bg-primary-gradient, url("/assets/images/7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .information__container {
+    padding: 12vh 10vh;
+    h3 {
+      @include text-center;
+      @include margin-bottom($h2-font-size);
+      @include text-white;
+      b {
+        color: $dark;
+      }
+      span {
+        @include margin-left($h6-font-size);
+      }
+    }
+    p {
+      font-size: $h5-font-size;
+      @include text-white;
+    }
+  }
+}
+
+.contact {
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .contact__container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 992px) {
+      top: 50%;
+    }
+    h3 {
+      color: $dark;
+      @include text-center;
+    }
+    .contact__social-network {
+      @include justify-content-center;
+      .icon {
+        @include margin(15px 10px);
+        @include text-white;
+        background-color: $primary;
+        border-radius: 50%;
+        .facebook,
+        .instagram {
+          padding: $h5-font-size;
+        }
+      }
+    }
+  }
+}

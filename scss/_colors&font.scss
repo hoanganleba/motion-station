@@ -3,10 +3,11 @@ $secondary: #532FE6;
 $warning: #F5B813;
 $success: #6FAD6A;
 $font-family-base: "Lato";
+$font-family-secondary: "Anton";
 $font-size-base: 0.875rem;
-$h1-font-size: $font-size-base * 4.85714; 
-$h2-font-size: $font-size-base * 3.7142857;
-$h3-font-size: $font-size-base * 2.857143;
-$h4-font-size: $font-size-base * 2.285714;
-$h5-font-size: $font-size-base * 1.5;
-$badge-font-size: $font-size-base;
+$h1-font-size: $font-size-base * 4.85714; // 68px
+$h2-font-size: $font-size-base * 3.7142857; // 52px
+$h3-font-size: $font-size-base * 2.857143; // 40px
+$h4-font-size: $font-size-base * 2.285714; // 32px
+$h5-font-size: $font-size-base * 1.5; // 21px
+$badge-font-size: $font-size-base; // 14px

@@ -1,0 +1,134 @@
+@mixin justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin text-white {
+  color: $gray-100;
+}
+
+@mixin text-muted {
+  color: $gray-600;
+}
+
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin margin-top($size) {
+  margin-top: $size;
+}
+
+@mixin margin-bottom($size) {
+  margin-bottom: $size;
+}
+
+@mixin margin-left($size) {
+  margin-left: $size;
+}
+
+@mixin margin-right($size) {
+  margin-right: $size;
+}
+
+@mixin margin($size) {
+  margin: $size;
+}
+
+#sidebar-button {
+  padding: 11px 15px 14px 15px;
+  margin: 5px 15px;
+  position: absolute;
+  z-index: 2;
+  top: 2%;
+}
+
+.btn-centered {
+  @include justify-content-center;
+  @include margin-top($h4-font-size);
+  @include margin-bottom($h4-font-size);
+}
+
+// ----- Dot section ----- //
+.dotted-group {
+  display: block;
+  text-align: right;
+  @include margin-top($h6-font-size);
+}
+
+.dotted {
+  padding: 1px 9px;
+  @include margin-left(1px);
+  @include margin-right(1px);
+  border-radius: 50%;
+}
+
+.dot-primary {
+  background: $primary;
+}
+
+.dot-secondary {
+  background: $secondary;
+}
+
+.dot-success {
+  background: $success;
+}
+
+// ----- Card section ----- //
+@mixin card-img($height) {
+  height: $height;
+  border-radius: 5px;
+  object-fit: cover;
+  width: 100%;
+}
+
+@mixin card-body {
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      @include text-muted;
+    }
+
+    .badge {
+      align-self: start;
+      @include margin-left($h5-font-size);
+    }
+  }
+}
+
+.card-list {
+  @include margin-top(7vh);
+
+  h3 {
+    @include text-center;
+    @include margin-bottom($h2-font-size);
+  }
+
+  .card-left,
+  .card-right {
+    .card-img {
+      @include card-img(600px);
+    }
+
+    @include card-body;
+  }
+
+  .card-small {
+    .card-img {
+      @include card-img(300px);
+    }
+
+    @include card-body;
+  }
+
+  .card-middle {
+    .card-img {
+      @include card-img(243px);
+    }
+
+    @include card-body;
+  }
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch&Read</title>
+    <title>Watch&Read1</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
@@ -15,50 +15,41 @@
         <sidebar></sidebar>
     </div>
     <main>
-        <button id="sidebar-button" class="btn btn-primary btn-sm" >
+        <button id="sidebar-button" class="btn btn-primary btn-sm">
             <img alt="list-icon" src="/assets/list.svg">
         </button>
-        <section id="watch-read-1" class="container-fluid row" >
-            <div class="col-md-6 offset-md-3">
-                <h3>DR. STONE</h3>
-                <p>Dr. Stone là một loạt manga Nhật Bản được viết bởi Riichiro Inagaki và minh họa bởi Boichi, đăng trên
-                    Weekly Shonen Jump từ ngày 06 tháng 3 năm 2017 với các chương đơn lẻ được thu thập và xuất bản bởi
-                    Shueisha thành mười tập... <span style="display:none">tankōbon Tính đến tháng 4 năm 2019. Viz Media
-                        đã cấp phép cho manga
-                        ở Bắc Mỹ</span>
-                </p>
-                <a href="#">Read More...</a>
-                <div class="author">
-                    <img src="/assets/Avatar.svg" alt="avatar">
-                    <div class="author__information">
-                        <p class="author__information--fullname">Creator Name</p>
-                        <p class="author__information--follower">2,024 Following</p>
-                    </div>
-                    <button class="btn btn-primary">Follow</button>
+        <section class="video">
+            <img class="video__header" src="/assets/images/Video@2x.png" alt="video" />
+            <div class="video__control">
+                <a href="#" class="video__control--previous">
+                    <img src="/assets/skip-back.svg" alt="previous" />
+                </a>
+                <a href="#" class="video__control--pause">
+                    <img src="/assets/pause.svg" alt="pause" />
+                </a>
+                <a href="#" class="video__control--next">
+                    <img src="/assets/skip-forward.svg" alt="next" />
+                </a>
+            </div>
+            <div class="video__slider">
+                <a href="#" class="video__slider--play-button">
+                    <img src="/assets/play.svg" alt="play">
+                </a>
+                <div class="video__slider--volume">
+                    <img src="/assets/volume-2.svg" alt="volume">
                 </div>
-                <div class="chapter-control">
-                    <a href="#">
-                        <img src="/assets/chevrons-left.svg" alt="backward">
-                    </a>
-                    <select class="form-control">
-                        <option disabled>Chương</option>
-                        <option value="chap1">Chương 1</option>
-                        <option value="chap2">Chương 2</option>
-                    </select>
-                    <a href="#">
-                        <img src="/assets/chevrons-right.svg" alt="forward">
-                    </a>
+                <div class="video__slider--range-slide">
+                    <input class="slider" type="range">
                 </div>
-                <div class="btn-centered">
-                    <div class="btn btn-dark">Watch Now</div>
-                </div>
-                <section class="read">
-                    <img src="/assets/images/Image 17.png" alt="manga">
-                    <img src="/assets/images/Image 18.png" alt="manga">
-                </section>
+                <a href="#" class="video__slider--square">
+                    <img src="/assets/square.svg" alt="square">
+                </a>
+                <a href="#" class="video__slider--maximize">
+                    <img src="/assets/maximize.svg" alt="maximize">
+                </a>
             </div>
         </section>
-        <section id="watch-read-2" class="container-fluid" >
+        <section id="watch-read-2" class="container-fluid">
             <div class="row">
                 <div class="col-md-7">
                     <div class="tag">

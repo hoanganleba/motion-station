@@ -1,3 +1,5 @@
+@use 'globalStyles'as *;
+
 @mixin transition {
   transition: all 0.7s;
 }
@@ -19,58 +21,67 @@ $sidebar-width: 300px;
     display: block;
     padding: 70px 50px;
 
+    .login {
+      @include margin-top(100px);
+    }
+
     select {
       font-size: $sidebar-font-size;
-      margin-top: $h4-font-size;
-      margin-bottom: $h6-font-size;
+      @include margin-top($h4-font-size);
+      @include margin-bottom($h6-font-size);
     }
+
     .list-group {
+      .line-bottom {
+        border-bottom: 2px solid $secondary;
+        @include margin-right(90px);
+      }
+
+      .line-top {
+        border-top: 2px solid $secondary;
+        @include margin-right(90px);
+      }
+
       &-item {
         font-size: $sidebar-font-size;
         text-transform: uppercase;
         border: none;
         padding: 10px 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        @include margin-top($h6-font-size);
+        @include margin-bottom($h6-font-size);
+
         a {
           text-decoration: none;
           color: $secondary;
+
           span {
-            margin-left: 10px;
+            @include margin-left($h6-font-size);
           }
+
           .text-premium {
             color: $primary;
             font-weight: border;
           }
         }
       }
+
       .social-network {
         display: flex;
         justify-content: start;
+
         .icon {
-          color: $gray-100;
+          @include text-muted;
+          @include margin-left(5px);
+          @include margin-right(5px);
           background-color: $primary;
           border-radius: 50%;
-          margin-left: 5px;
-          margin-right: 5px;
 
           .facebook,
           .instagram {
-            padding: 10px;
+            padding: $h6-font-size;
           }
         }
       }
-      .line-bottom {
-        border-bottom: 2px solid $secondary;
-        margin-right: 90px;
-      }
-      .line-top {
-        border-top: 2px solid $secondary;
-        margin-right: 90px;
-      }
-    }
-    .login {
-      margin-top: 100px;
     }
   }
 }
@@ -81,12 +92,6 @@ $sidebar-width: 300px;
 }
 
 .show-sidebar {
-  margin-left: $sidebar-width;
-  @include transition;
-}
-
-main {
-  z-index: 2;
-  width: 100%;
+  @include margin-left($sidebar-width);
   @include transition;
 }

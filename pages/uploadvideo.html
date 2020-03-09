@@ -10,11 +10,12 @@
 </head>
 
 <body>
+    <!-- Vue sidebar component -->
     <div id="sidebar-component">
         <sidebar></sidebar>
     </div>
     <main>
-        <button class="btn btn-primary btn-sm" id="side-bar-button">
+        <button id="sidebar-button" class="btn btn-primary btn-sm">
             <img alt="list-icon" src="/assets/list.svg">
         </button>
         <section id="upload-video">
@@ -26,7 +27,7 @@
                 <div class="col-md add-video">
                     <h3>Drag Video Here</h3>
                 </div>
-                <div class="col-md add-info">
+                <div class="col-md add-information">
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="title">TITLE</span>
@@ -46,7 +47,7 @@
                             <span class="input-group-text">GENRES</span>
                         </div>
                         <div class="form-control">
-                            <select id="genre-select">
+                            <select class="genre-select">
                                 <option disabled>Option selected</option>
                                 <option value="Action">Action</option>
                                 <option value="Adventure">Adventure</option>

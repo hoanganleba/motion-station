@@ -30,6 +30,6 @@ $input-group-addon-border-color: $gray-800;
 @import "node_modules/bootstrap/scss/nav";
 @import "node_modules/bootstrap/scss/forms";
 @import "node_modules/bootstrap/scss/input-group";
-@import "customize";
+@import "root";
 
 $theme-colors: map-remove($theme-colors, "info");

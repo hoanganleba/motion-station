@@ -1,4 +1,4 @@
-$('#side-bar-button').click(function (e) {
+$('#sidebar-button').click(function (e) {
     e.stopPropagation();
     $('main').toggleClass('show-sidebar');
     $('.sidebar').toggleClass('show');

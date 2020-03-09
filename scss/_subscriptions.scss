@@ -1,17 +1,25 @@
-#subscriptions {
+@use 'globalStyles'as *;
+
+.subscriptions {
+  padding-left: $h6-font-size;
+  padding-right: $h6-font-size;
   .nav {
-    margin-top: 5vh;
+    @include margin-top(5vh);
+
     .active {
       padding-bottom: 10px;
       border-bottom: 1px solid $primary;
     }
+
     .nav-item {
-      margin-left: 15px;
-      margin-right: 15px;
+      @include margin-left(15px);
+      @include margin-right(15px);
     }
+
     .line-right {
       border-right: 2px solid $secondary;
     }
+
     .following {
       color: $secondary;
     }

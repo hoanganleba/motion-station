@@ -1,43 +1,40 @@
+@use 'globalStyles'as *;
+
 #create-account {
-  margin-top: $h2-font-size * 2;
-  .button-group {
-    text-align: center;
+  @include margin-top($h2-font-size * 2);
+
+  .btn-group {
+    @include text-center;
+
     .btn {
-      margin-left: 5px;
-      margin-right: 5px;
+      @include margin-left(5px);
+      @include margin-right(5px);
     }
   }
+
+  p {
+    @include text-center;
+  }
+
   h3 {
     color: $secondary;
-    text-align: center;
-    margin-top: $h2-font-size;
-    margin-bottom: $h4-font-size;
+    @include text-center;
+    @include margin-top($h2-font-size);
+    @include margin-bottom($h4-font-size);
   }
-  p {
-    text-align: center;
-  }
+
   form {
-    display: flex;
-    justify-content: center;
+    @include justify-content-center;
+
     label {
       font-weight: bolder;
     }
-    #choose-language {
-      label {
-        display: block;
-      }
-      select {
-        background-color: white;
-        width: 100%;
-        height: calc(1.5em + 0.75rem + 2px);
-        border: 1px solid $gray-800;
-        color: $gray-600;
-      }
-    }
+
     .form-center {
-      margin-left: $h4-font-size;
-      margin-right: $h4-font-size;
       width: 40%;
+      @include margin-left($h4-font-size);
+      @include margin-right($h4-font-size);
+
       @media screen and (max-width: 720px) {
         width: 100%;
       }

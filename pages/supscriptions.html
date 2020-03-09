@@ -10,18 +10,18 @@
 </head>
 
 <body>
-
+    <!-- Vue sidebar component -->
     <div id="sidebar-component">
         <sidebar></sidebar>
     </div>
     <main>
-        <section class="main-img-section">
-            <button class="btn btn-primary btn-sm" id="side-bar-button">
+        <section class="header-img">
+            <button id="sidebar-button" class="btn btn-primary btn-sm" >
                 <img alt="list-icon" src="/assets/list.svg">
             </button>
-            <div class="main-img-content small">
+            <div class="header-img__container small">
                 <div class="content">
-                    <h1 class="text-primary font-weight-bold">Dr. Stone</h1>
+                    <h1>Dr. Stone</h1>
                     <div class="tag">
                         <span class="badge badge-pill badge-primary"> English</span>
                         <span class="badge badge-pill badge-warning text-white"> Korean</span>
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid" id="subscriptions">
+        <section class="subscriptions" class="container-fluid">
             <ul class="nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">All shows</a>
@@ -55,13 +55,14 @@
                     <a class="nav-link following" href="#">Following</a>
                 </li>
             </ul>
+            <!-- Vue section -->
             <div id="app" class="row card-list">
                 <div v-for="item in list" class="col-lg-4 col-md-6">
                     <div class="card card-small">
                         <img class="card-img" v-bind:src="'/assets/images/' + item.imgSrc" alt="Card image cap">
                         <div class="card-body">
                             <div>
-                                <h5 class="card-title text-primary">Thánh Võ Tinh Thần | Chap 35</h5>
+                                <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
                                 <p>12.374 views | 2 tháng trước</p>
                             </div>
                             <div>
