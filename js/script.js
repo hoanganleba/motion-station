@@ -10,4 +10,7 @@ $('main').click(function () {
     $('main').removeClass('show-sidebar');
     $('.sidebar').removeClass('show');
 });
+$('.showmore-btn').click(function(){
+    $('.showmore').toggleClass('d-none');
+})
 
