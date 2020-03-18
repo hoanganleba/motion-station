@@ -1,0 +1,46 @@
+@mixin text-white {
+  color: $gray-100;
+}
+
+@mixin text-muted {
+  color: $gray-600;
+}
+
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin margin-top($size) {
+  margin-top: $size;
+}
+
+@mixin margin-bottom($size) {
+  margin-bottom: $size;
+}
+
+@mixin margin-left($size) {
+  margin-left: $size;
+}
+
+@mixin margin-right($size) {
+  margin-right: $size;
+}
+
+@mixin margin($size) {
+  margin: $size;
+}
+
+@mixin justify-content($value) {
+  display: flex;
+  justify-content: $value;
+}
+
+@function get-breakpoints($key: "md") {
+  @return map-get($container-max-widths, $key);
+}
+
+@mixin max-width($breakpoints) {
+  @media screen and (max-width: get-breakpoints($breakpoints)) {
+    @content;
+  }
+}

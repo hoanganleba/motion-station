@@ -1,31 +1,31 @@
-@use 'globalStyles'as *;
-
-@mixin transition {
-  transition: all 0.7s;
-}
-
-$sidebar-font-size: $font-size-base;
-$sidebar-width: 300px;
+@use 'base/globalStyles'as *;
 
 .sidebar {
   height: 100vh;
-  width: 0px;
+  width: 0;
+  z-index: 2;
   position: fixed;
   overflow-x: hidden;
   top: 0;
   left: 0;
-  box-shadow: 0 15px 25px 0 rgba($gray-900, 0.55);
+  box-shadow: 0 15px 25px 0 rgba($gray-900, 0.75);
+  background-color: $white;
+  .btn-close {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
 
   &-content {
     display: block;
-    padding: 70px 50px;
+    padding: 70px 40px;
 
     .login {
       @include margin-top(100px);
     }
 
     select {
-      font-size: $sidebar-font-size;
+      font-size: $font-size-base;
       @include margin-top($h4-font-size);
       @include margin-bottom($h6-font-size);
     }
@@ -42,7 +42,7 @@ $sidebar-width: 300px;
       }
 
       &-item {
-        font-size: $sidebar-font-size;
+        font-size: $font-size-base;
         text-transform: uppercase;
         border: none;
         padding: 10px 0px;
@@ -85,12 +85,6 @@ $sidebar-width: 300px;
   }
 }
 
-.show {
+.sidebar-active {
   width: $sidebar-width;
-  @include transition;
-}
-
-.show-sidebar {
-  @include margin-left($sidebar-width);
-  @include transition;
 }

@@ -1,5 +1,5 @@
 // My variable overrides
-@import "colors&font";
+@import "base/colors&font";
 $badge-padding-y: 10px;
 $badge-padding-x: 40px;
 $badge-pill-padding-x: 40px;
@@ -31,6 +31,7 @@ $input-group-addon-border-color: $gray-800;
 @import "node_modules/bootstrap/scss/nav";
 @import "node_modules/bootstrap/scss/forms";
 @import "node_modules/bootstrap/scss/input-group";
+@import "node_modules/bootstrap/scss/carousel";
 @import "root";
 
 $theme-colors: map-remove($theme-colors, "info");

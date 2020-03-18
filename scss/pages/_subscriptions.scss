@@ -1,19 +1,20 @@
-@use 'globalStyles'as *;
+@use 'base/globalStyles'as *;
 
 .subscriptions {
   padding-left: $h6-font-size;
   padding-right: $h6-font-size;
   .nav {
-    @include margin-top(5vh);
+    @include margin-top(3vh);
 
     .active {
       padding-bottom: 10px;
-      border-bottom: 1px solid $primary;
+      border-bottom: 2px solid $primary;
     }
 
     .nav-item {
       @include margin-left(15px);
       @include margin-right(15px);
+      @include margin-top(15px);
     }
 
     .line-right {

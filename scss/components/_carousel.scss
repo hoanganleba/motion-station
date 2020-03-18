@@ -1,0 +1,69 @@
+@use "globaelStyles" as *;
+
+#carouselCaptions {
+  .carousel-indicators {
+    display: block;
+    left: 95%;
+    bottom: 4%;
+    @include margin-left(0px);
+    @include margin-right(0px);
+    li {
+      display: block;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      opacity: 0.9;
+    }
+    .active {
+      background-color: $primary;
+    }
+  }
+  .carousel-item {
+    img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      background-size: cover;
+    }
+    .img-small {
+      height: 300px;
+    }
+    .carousel-gradient-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: $bg-dark-gradient;
+      .carousel-caption {
+        @include justify-content(space-between);
+        align-items: center;
+        left: 4%;
+        bottom: 6%;
+        right: 8%;
+        text-align: left;
+        .carousel-content {
+          p {
+            font-size: $h5-font-size;
+          }
+          .carousel-tag {
+            font-style: oblique;
+            .badge {
+              @include margin(2px);
+            }
+            .badge-warning {
+              color: $white;
+            }
+          }
+        }
+        .carousel-btn-play {
+          @include margin-left($h5-font-size);
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}

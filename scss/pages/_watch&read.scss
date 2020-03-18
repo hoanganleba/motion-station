@@ -1,7 +1,8 @@
-@use 'globalStyles' as *;
+@use 'base/globalStyles'as *;
+
 .author {
   @include margin-top($h2-font-size);
-  @include justify-content-center;
+  @include justify-content(center);
   align-items: center;
   img {
     height: 50px;
@@ -29,7 +30,7 @@
     overflow: hidden;
   }
   .center{
-    @include justify-content-center;
+    @include justify-content(center);
   }
   .chapter-control {
     @include margin-top($h1-font-size);
@@ -91,12 +92,11 @@
     @include margin-bottom($h6-font-size);
   }
   .comments__information {
+    align-items: center;
     img {
       width: 45px;
     }
-    display: flex;
-    align-items: center;
-    justify-content: start;
+    @include justify-content(start);
     @include margin-top($h1-font-size);
     @include margin-bottom($h5-font-size);
     &--name {
@@ -125,7 +125,7 @@
     position: absolute;
     width: 100%;
     top: 40%;
-    @include justify-content-center;
+    @include justify-content(center);
     &--previous,
     &--pause,
     &--next {

@@ -1,0 +1,19 @@
+$sidebar-width: 290px;
+
+$bg-dark-gradient: linear-gradient(
+  to bottom,
+  rgba($dark, 0.5),
+  rgba($dark, 0.9)
+);
+
+$bg-primary-gradient: linear-gradient(
+  to bottom,
+  rgba($primary, 0.9),
+  rgba($primary, 0.9)
+);
+
+$bg-light-gradient: linear-gradient(
+  to bottom,
+  rgba($gray-100, 0.9),
+  rgba($gray-100, 0.9)
+)

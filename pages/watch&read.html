@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch&Read</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <nav class="sidebar">
+    <nav class="sidebar sidebar-active">
+        <button class="btn btn-close"><img src="/assets/x.svg" alt="close"></button>
         <div class="sidebar-content">
             <h2>MOTION STATION</h2>
             <select class="form-control">
@@ -66,7 +67,7 @@
             </ul>
         </div>
     </nav>
-    <main>
+    <main class="main-active">
         <button id="sidebar-button" class="btn btn-primary btn-sm">
             <img alt="list-icon" src="/assets/list.svg">
         </button>
@@ -176,13 +177,15 @@
                 </div>
                 <section class="col-md-5 card-list">
                     <div class="card card-small">
-                        <div class="card-img-gradient">
+                        <div class="card-img-container">
                             <img class="card-img" src="/assets/images/1.png" alt="Card image cap">
-                            <div class="tag">
-                                <span class="badge badge-pill badge-primary"> English</span>
-                                <span class="badge badge-pill badge-warning">Korean</span>
-                                <span class="badge badge-pill badge-success"> Vietnamese</span>
-                                <span class="badge badge-pill badge-secondary"> Japanese</span>
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
                             </div>
                         </div>
                         <div class="card-body">
@@ -203,13 +206,15 @@
                         </div>
                     </div>
                     <div class="card card-small">
-                        <div class="card-img-gradient">
+                        <div class="card-img-container">
                             <img class="card-img" src="/assets/images/12.png" alt="Card image cap">
-                            <div class="tag">
-                                <span class="badge badge-pill badge-primary"> English</span>
-                                <span class="badge badge-pill badge-warning">Korean</span>
-                                <span class="badge badge-pill badge-success"> Vietnamese</span>
-                                <span class="badge badge-pill badge-secondary"> Japanese</span>
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
                             </div>
                         </div>
                         <div class="card-body">
@@ -230,13 +235,15 @@
                         </div>
                     </div>
                     <div class="card card-small">
-                        <div class="card-img-gradient">
+                        <div class="card-img-container">
                             <img class="card-img" src="/assets/images/34.png" alt="Card image cap">
-                            <div class="tag">
-                                <span class="badge badge-pill badge-primary"> English</span>
-                                <span class="badge badge-pill badge-warning">Korean</span>
-                                <span class="badge badge-pill badge-success"> Vietnamese</span>
-                                <span class="badge badge-pill badge-secondary"> Japanese</span>
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
                             </div>
                         </div>
                         <div class="card-body">
@@ -257,13 +264,15 @@
                         </div>
                     </div>
                     <div class="card card-small">
-                        <div class="card-img-gradient">
+                        <div class="card-img-container">
                             <img class="card-img" src="/assets/images/56.png" alt="Card image cap">
-                            <div class="tag">
-                                <span class="badge badge-pill badge-primary"> English</span>
-                                <span class="badge badge-pill badge-warning">Korean</span>
-                                <span class="badge badge-pill badge-success"> Vietnamese</span>
-                                <span class="badge badge-pill badge-secondary"> Japanese</span>
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
                             </div>
                         </div>
                         <div class="card-body">
@@ -287,8 +296,8 @@
             </div>
         </section>
     </main>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/js/script.js"></script>
 </body>
 

@@ -1,4 +1,4 @@
-@use 'globalStyles'as *;
+@use 'base/globalStyles'as *;
 
 #upload-video {
   @include margin-top($h2-font-size * 2);
@@ -38,7 +38,7 @@
       @include margin-bottom($h6-font-size);
 
       .input-group-text {
-        @include justify-content-center;
+        @include justify-content(center);
         @include text-center;
         padding: 15px 30px;
         width: 160px;

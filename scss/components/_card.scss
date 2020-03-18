@@ -1,0 +1,98 @@
+@mixin card-img($height) {
+  height: $height;
+  border-radius: $border-radius;
+  object-fit: cover;
+  width: 100%;
+}
+
+@mixin card-body {
+  .card-body {
+    padding-left: 5px;
+    padding-right: 5px;
+    .card-first {
+      @include justify-content(space-between);
+      align-items: center;
+      flex-wrap: wrap;
+      .btn {
+        @include margin-bottom(12px);
+        @include margin-right(5px);
+      }
+    }
+    .card-second {
+      @include justify-content(space-between);
+      align-items: center;
+      p {
+        @include text-muted;
+        @include margin-bottom(0px);
+      }
+    }
+  }
+}
+
+.card-left,
+.card-right,
+.card-large {
+  .card-img {
+    @include card-img(605px);
+    @include max-width("lg") {
+      @include card-img(250px);
+    }
+  }
+  @include card-body;
+}
+
+.card-small,
+.card-middle {
+  .card-img {
+    @include card-img(250px);
+  }
+  @include card-body;
+}
+.card-list {
+  @include margin-top(7vh);
+
+  h3 {
+    @include text-center;
+    @include margin-bottom($h2-font-size);
+  }
+  .card-img-container {
+    position: relative;
+
+    .card-img-gradient-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: inherit;
+      width: 100%;
+      border-radius: $border-radius;
+      background: $bg-dark-gradient;
+      transition: 0.5s ease;
+      opacity: 0;
+      .card-dot-success {
+        position: absolute;
+        right: 0;
+        @include margin-top(-12px);
+        @include margin-right(-12px);
+        height: 34px;
+        width: 34px;
+        background-color: $success;
+        border-radius: 50%;
+      }
+      .card-tag {
+        @include margin-top($h6-font-size);
+        @include margin-left($h6-font-size);
+        .badge {
+          padding: 8px 20px;
+          @include margin-bottom(5px);
+          font-style: oblique;
+          color: $white;
+        }
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.information {
+  @include margin-top(12vh);
+  @include margin-left(auto);
+  @include margin-right(auto);
+  width: 100%;
+  padding-left: $h6-font-size;
+  padding-right: $h6-font-size;
+  background: $bg-primary-gradient, url("/assets/images/7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    padding: 12vh 8vh;
+    h3 {
+      @include text-center;
+      @include margin-bottom($h2-font-size);
+      @include text-white;
+      b {
+        color: $dark;
+      }
+      span {
+        @include margin-left($h6-font-size);
+      }
+    }
+    p {
+      font-size: $h5-font-size;
+      @include text-white;
+    }
+  }
+}
+
+.contact {
+  position: relative;
+  @include margin-left(auto);
+  @include margin-right(auto);
+  .contact-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .contact__container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include max-width("lg"){
+        top: 50%;
+    };
+    h3 {
+      color: $dark;
+      @include text-center;
+    }
+    .contact__social-network {
+      @include justify-content(center);
+      .icon {
+        @include margin(15px 10px);
+        @include text-white;
+        background-color: $primary;
+        border-radius: 50%;
+        .facebook,
+        .instagram {
+          padding: $h5-font-size;
+        }
+      }
+    }
+  }
+}
