@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Management</title>
+    <title>Supscriptions</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -71,22 +71,79 @@
         <button id="sidebar-button" class="btn btn-primary btn-sm">
             <img alt="list-icon" src="/assets/list.svg">
         </button>
-        <section id="header-img">
-            <div class="header-avatar">
-                <img src="/assets/images/avatar.png" alt="avatar">
+        <section id="carouselCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-small" src="/assets/images/video.png" alt="...">
+                    <div class="carousel-gradient-overlay">
+                        <div class="carousel-caption">
+                            <div class="carousel-content">
+                                <h1>Dr. Stone</h1>
+                                <div class="carousel-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                            <div class="carousel-btn-play">
+                                <a href="/pages/watch&read1.html" alt="play-button">
+                                    <img src="/assets/Buttons-Play.svg" alt="playbuttonicon" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-small" src="/assets/images/1.png" alt="...">
+                    <div class="carousel-gradient-overlay">
+                        <div class="carousel-caption">
+                            <div class="carousel-content">
+                                <h1>Dr. Stone</h1>
+                                <div class="carousel-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                            <div class="carousel-btn-play">
+                                <a href="/pages/watch&read1.html" alt="play-button">
+                                    <img src="/assets/Buttons-Play.svg" alt="playbuttonicon" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="img-small" src="/assets/images/phuong-nghich-thien-ha.png" alt="...">
+                    <div class="carousel-gradient-overlay">
+                        <div class="carousel-caption">
+                            <div class="carousel-content">
+                                <h1>Dr. Stone</h1>
+                                <div class="carousel-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                            <div class="carousel-btn-play">
+                                <a href="/pages/watch&read1.html" alt="play-button">
+                                    <img src="/assets/Buttons-Play.svg" alt="playbuttonicon" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="page-management" class="container-fluid">
-            <h4>Creator Name</h4>
-            <p>2,024 Following</p>
-            <div class="social-group">
-                <a href="#" class="icon">
-                    <img class="facebook" src="/assets/facebook.svg" alt="Facebook">
-                </a>
-                <a href="#" class="icon">
-                    <img class="instagram" src="/assets/instagram.svg" alt="Instagram">
-                </a>
-            </div>
+        <section class="subscriptions" class="container-fluid">
             <ul class="nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">All shows</a>
@@ -100,12 +157,25 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Manhwa</a>
                 </li>
+                <li class="nav-item line-right"></li>
+                <li class="nav-item">
+                    <a class="nav-link following" href="#">Following</a>
+                </li>
             </ul>
             <div class="row card-list">
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/1.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/1.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -126,8 +196,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/45.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/45.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -147,8 +226,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/12.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/12.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -169,8 +257,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/34.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/34.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -191,8 +288,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/phuong-nghich-thien-ha.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/phuong-nghich-thien-ha.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -212,8 +318,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/56.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/56.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -234,8 +349,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/robot.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/robot.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -256,8 +380,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/hqdefault.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/hqdefault.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -277,8 +410,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/4.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/4.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -299,8 +441,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/truyen-manhua-8.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/truyen-manhua-8.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -321,8 +472,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/78.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/78.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -342,8 +502,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/girl-with-classes.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/girl-with-classes.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -364,8 +533,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/45.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/45.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -386,8 +564,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/45.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/45.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -407,8 +594,17 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card card-small">
-                        <img class="card-img" src="/assets/images/90.png" alt="Card image cap">
-                        <img class="card-setting" src="/assets/Group 432.svg" alt="setting">
+                        <div class="card-img-container">
+                            <img class="card-img" src="/assets/images/90.png" alt="Card image cap">
+                            <div class="card-img-gradient-overlay">
+                                <div class="card-tag">
+                                    <span class="badge badge-pill badge-primary"> English</span>
+                                    <span class="badge badge-pill badge-warning">Korean</span>
+                                    <span class="badge badge-pill badge-success"> Vietnamese</span>
+                                    <span class="badge badge-pill badge-secondary"> Japanese</span>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="card-first">
                                 <h5 class="card-title">Thánh Võ Tinh Thần | Chap 35</h5>
@@ -430,8 +626,9 @@
             </div>
         </section>
     </main>
-
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/js/script.js"></script>
 </body>
 

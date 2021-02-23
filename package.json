@@ -1,21 +1,26 @@
 {
   "name": "motion-station",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "UI of motion station",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "An",
+  "author": "Le Ba Hoang An",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.5.0"
+    "bootstrap": "^4.6.0",
+    "del": "^6.0.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.2.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp4-run-sequence": "^1.0.1"
   }
 }

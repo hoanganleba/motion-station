@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank you</title>
+    <title>Create Account</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -69,22 +69,53 @@
     </nav>
     <main class="main-active">
         <button id="sidebar-button" class="btn btn-primary btn-sm">
-            <img alt="list-icon" src="/assets/list.svg" />
+            <img alt="list-icon" src="/assets/list.svg">
         </button>
-        <section id="thank-you">
-            <div class="content">
-                <h2>Thank You</h2>
-                <p>Chúc mừng bạn đã trở thành thành viên của Motion Station</p>
-                </br>
-                <p>Chúc bạn coi truyện vui vẻ</p>
-                </br>
-                <p class="text-primary">Website sẽ chuyển hướng về trang chủ cho bạn</p>
-                <p class="text-primary">Chick vào <a href="/index.html">đây</a> nếu trang chưa chuyển hướng</p>
+        <section id="create-account">
+            <div class="btn-group">
+                <button class="btn btn-outline-secondary btn-lg">Tạo tài khoản</button>
+                <button class="btn btn-outline-dark btn-lg">Đăng Nhập</button>
             </div>
+            <h3>Tạo tài khoản</h3>
+            <form>
+                <div class="form-center">
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" />
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="chooseLanguage" style="display:block">Choose Language</label>
+                        <select class="form-control">
+                            <option value="en">English</option>
+                            <option value="fr">French</option>
+                            <option value="it">Italian</option>
+                            <option value="ja">Japanese</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <div class="btn-centered">
+                <button class="btn btn-secondary btn-lg">Create Account</button>
+            </div>
+            <p>Have an account? <a href="#">Sign In</a></p>
         </section>
     </main>
 
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
 </body>
 

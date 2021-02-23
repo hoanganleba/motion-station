@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account</title>
+    <title>Payment</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -68,54 +68,78 @@
         </div>
     </nav>
     <main class="main-active">
-        <button id="sidebar-button" class="btn btn-primary btn-sm">
+        <button id="sidebar-button" class="btn btn-primary btn-sm" >
             <img alt="list-icon" src="/assets/list.svg">
         </button>
-        <section id="create-account">
-            <div class="btn-group">
-                <button class="btn btn-outline-secondary btn-lg">Tạo tài khoản</button>
-                <button class="btn btn-outline-dark btn-lg">Đăng Nhập</button>
-            </div>
-            <h3>Tạo tài khoản</h3>
+        <section id="payment">
+            <h3>Thanh toán</h3>
+            <h5>Chọn các hình thức thanh toán</h5>
             <form>
-                <div class="form-center">
+                <div class="billing-info">
+                    <h4>Billing Info</h4>
+                    <div class="form-group">
+                        <label for="fullname">FULLNAME</label>
+                        <input type="text" class="form-control" name="fullname" id="fullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">ADDRESS</label>
+                        <input type="text" class="form-control" name="address" id="address">
+                    </div>
                     <div class="form-row">
-                        <div class="col-md-6 form-group">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" class="form-control" />
+                        <div class="form-group col-md-6">
+                            <label for="city">CITY</label>
+                            <input type="text" class="form-control" name="city" id="city">
                         </div>
-                        <div class="col-md-6 form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" class="form-control" />
+                        <div class="form-group col-md-6">
+                            <label for="zipcode">ZIP CODE</label>
+                            <input type="text" class="form-control" name="zipcode" id="zipcode">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" class="form-control">
+                        <label for="country">COUNTRY</label>
+                        <div class="country-select">
+                            <select class="form-control" id="country">
+                                <option selected>Choose...</option>
+                                <option value="japan">Japan</option>
+                                <option value="korea">Korean</option>
+                                <option value="vietnam">Vietnam</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="credit-card">
+                    <h4>Credit Card Info</h4>
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="cardnumber">CARDNUMBER</label>
+                            <input type="text" class="form-control" name="cardnumber" id="cardnumber">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="typecard">TYPE</label>
+                            <input type="text" class="form-control" name="typecard" id="typecard">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword" class="form-control">
+                        <label for="cardholdername">CARDHOLDER NAME</label>
+                        <input type="text" class="form-control" name="cardholdername" id="cardholdername">
                     </div>
                     <div class="form-group">
-                        <label for="chooseLanguage" style="display:block">Choose Language</label>
-                        <select class="form-control">
-                            <option value="en">English</option>
-                            <option value="fr">French</option>
-                            <option value="it">Italian</option>
-                            <option value="ja">Japanese</option>
-                        </select>
+                        <label for="expiredate">EXPIRE DATE</label>
+                        <input type="date" class="form-control" name="expiredate" id="expiredate">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="form-control" name="cvv" id="cvv">
                     </div>
                 </div>
             </form>
             <div class="btn-centered">
-                <button class="btn btn-secondary btn-lg">Create Account</button>
+                <button type="button" class="btn btn-primary btn-lg">Confirm</button>
             </div>
-            <p>Have an account? <a href="#">Sign In</a></p>
         </section>
     </main>
-
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
 </body>
 

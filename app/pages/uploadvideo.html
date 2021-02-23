@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium</title>
+    <title>Upload Video</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
@@ -68,80 +68,65 @@
         </div>
     </nav>
     <main class="main-active">
-        <button id="sidebar-button" class="btn btn-primary btn-sm" >
+        <button id="sidebar-button" class="btn btn-primary btn-sm">
             <img alt="list-icon" src="/assets/list.svg">
         </button>
-        <section id="premium">
-            <h3>Đăng kí gói Motion. Station</h3>
-            <h5>Thoả mãn nhu cầu của bạn</h5>
-            <div class="options">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="badge badge-secondary">
-                            30 DAYS TRIAL
-                        </div>
-                        <h2><sup>$ </sup>00<sub> /month</sub></h2>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div>Memebers</div>
-                                <b>Free</b>
-                            </div>
-                            <div class="list-group-item">
-                                <div>Projects</div>
-                                <b>1</b>
-                            </div>
-                            <div class="list-group-item">
-                                <div>Users</div>
-                                <b>1</b>
-                            </div>
-                            <div class="list-group-item">
-                                <div>Storage</div>
-                                <b>-</b>
-                            </div>
-                            <div class="list-group-item border-none">
-                                <div>More</div>
-                                <b>-</b>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="/pages/payment.html" class="btn btn-primary btn-lg">CURRENT PLAN</a>
+        <section id="upload-video">
+            <div class="button-group">
+                <button class="btn btn-outline-dark btn-lg">Video</button>
+                <button class="btn btn-outline-primary btn-lg">Comic</button>
+            </div>
+            <div class="row context">
+                <div class="col-md add-video">
+                    <h3>Drag Video Here</h3>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="badge badge-secondary">
-                            PERSONAL
+                <div class="col-md add-information">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="title">TITLE</span>
                         </div>
-                        <h2><sup>$ </sup>20<sub> /month</sub></h2>
-                        <div class="list-group">
-                            <div class="list-group-item">
-                                <div>Memebers</div>
-                                <b>30</b>
-                            </div>
-                            <div class="list-group-item">
-                                <div>Projects</div>
-                                <b>30</b>
-                            </div>
-                            <div class="list-group-item">
-                                <div>Users</div>
-                                <b>Unlimited</b>
-                            </div>
-                            <div class="list-group-item">
-                                <div>Storage</div>
-                                <b>20gb</b>
-                            </div>
-                            <div class="list-group-item border-none">
-                                <div>More</div>
-                                <b>-</b>
-                            </div>
+                        <input placeholder="Required field" type="text" class="form-control"
+                            aria-label="Sizing example input" aria-describedby="TITLE">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="author">AUTHOR</span>
+                        </div>
+                        <input placeholder="Required field" type="text" class="form-control"
+                            aria-label="Sizing example input" aria-describedby="author">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">GENRES</span>
+                        </div>
+                        <div class="form-control">
+                            <select class="genre-select">
+                                <option disabled>Option selected</option>
+                                <option value="Action">Action</option>
+                                <option value="Adventure">Adventure</option>
+                                <option value="Comedy">Comedy</option>
+                                <option value="Drama">Drama</option>
+                                <option value="Slice of Life">Slice of Life</option>
+                            </select>
                         </div>
                     </div>
-                    <a href="/pages/payment.html" class="btn btn-primary btn-lg">UPGRADE</a>
+                    <div class="input-group-description">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="Description">DESCRIPTION</span>
+                        </div>
+                        <textarea placeholder="Type something" type="text" class="form-control"
+                            aria-label="Sizing example input" aria-describedby="Description"></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-lg">
+                        <div class="icon-text">Upload</div>
+                        <img class="icon" src="/assets/video.svg" alt="Upload">
+                    </button>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
 </body>
 
